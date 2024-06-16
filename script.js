@@ -20,9 +20,11 @@ form.addEventListener('submit', (event) => {
     if (inputValue in responses) {
         answer.innerText = responses[inputValue];
     } else {
+        answer.innerText = responses['toxic'];
         answer.innerText = responses['default'];
     }
     input.value = '';
+    return;
   // Si le formulaire est vide, alors on stop la fonction, pas de resultats
 })
 
