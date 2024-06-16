@@ -7,13 +7,13 @@
 </head>
 <body>
     
-    <form action="">
-        <label for="">Question:</label>
-        <input type="text">
+    <form id="question">
+        <label for="text">Question:</label>
+        <input type="text" name="text" id="text">
         <button>Envoyer</button>
     </form>
     <div id="answer"></div>
-    
+
     <!-- Tensorflow -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>
